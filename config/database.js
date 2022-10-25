@@ -9,7 +9,7 @@ module.exports = ({ env }) => ({
       user: env('DATABASE_USERNAME', '1vqsz4ob66uu32f92kh7'),
       password: env('DATABASE_PASSWORD', 'pscale_pw_HXLEk4vTKi4PxHvzYNCNKbsNq4UBRbcW4noYySNdsrm'),
       ssl: {
-        ca: fs.readFileSync(__dirname + '/mysql-ca-main.crt')
+        ca: fs.readFileSync('/etc/ssl/certs/ca-certificates.crt')
       },
     },
   },
